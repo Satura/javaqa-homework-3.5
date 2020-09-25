@@ -17,30 +17,6 @@ public class ProductManager {
     }
 
     public Product[] searchBy(String text) {
-//        Product[] allProducts = repositry.findAll();
-//        int length = 0;
-//        boolean isItThere = false;
-//
-//        //вычисляем сколько совпадений имеется
-//        for (Product product : allProducts) {
-//            if (matches(product,text)){
-//                length++;
-//                isItThere = true;
-//            }
-//        }
-//
-//        Product[] result = new Product[length];
-//
-//        if (isItThere) {
-//            for (int i = 0; i < allProducts.length; i++){
-//                for (int j = 0; j < result.length; j++) {
-//                    if (matches(allProducts[i], text)) {
-//                        result[j] = allProducts[i];
-//                    }
-//                }
-//            }
-//        }
-
         Product[] result = new Product[0];
 
         for (Product product : repository.findAll()) {
